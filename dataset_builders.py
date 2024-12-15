@@ -28,8 +28,8 @@ def clean_1D_signal(signal: list, window: int = 3000, polyorder: int = 3):
   return normalize_1D_signal(smoothed_signal)
 
 #
-# Creates a dictionary of dataframes using the WESAD chest dataset
-# 
+# Builds chest dataframes from each subject.
+# Output is a dictionary where the key is the subject key and the value is the dataframe.
 #
 def build_chest_dataframe(pkl_path: str, start_index: int = 1500000):
   _df = pd.DataFrame()
