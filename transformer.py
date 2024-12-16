@@ -8,7 +8,7 @@ from torch.nn.functional import one_hot
 from torchvision.ops import sigmoid_focal_loss
 from sklearn.metrics import accuracy_score, f1_score
 
-from research_paper.final.dataset_builders import split_dataset
+from dataset_builders import split_dataset
 
 Device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
